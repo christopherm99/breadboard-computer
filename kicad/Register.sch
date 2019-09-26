@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 8500 11000 portrait
 encoding utf-8
-Sheet 2 22
+Sheet 2 26
 Title "Register Block"
 Date "2019-09-26"
 Rev "v0.1"
@@ -193,6 +193,9 @@ F16 "BUS_13" B T 2650 8250 50
 F17 "BUS_14" B T 2550 8250 50 
 F18 "BUS_15" B T 2450 8250 50 
 F19 "CLR" I T 1750 8250 50 
+F20 "~PCO~" I T 2000 8250 50 
+F21 "~PCI~" I T 1900 8250 50 
+F22 "INCPC" I T 2300 8250 50 
 $EndSheet
 Text HLabel 1200 650  0    50   BiDi ~ 0
 BUS_0
@@ -592,17 +595,17 @@ F7 "BUS_5" B T 7200 8250 50
 F8 "BUS_6" B T 7100 8250 50 
 F9 "BUS_7" B T 7000 8250 50 
 F10 "CLK" I T 5400 8250 50 
-F11 "~SI~" I B 5400 9150 50 
-F12 "CLR" I T 5300 8250 50 
-F13 "BUS_8" B T 6900 8250 50 
-F14 "BUS_9" B T 6800 8250 50 
-F15 "BUS_10" B T 6700 8250 50 
-F16 "BUS_11" B T 6600 8250 50 
-F17 "BUS_12" B T 6500 8250 50 
-F18 "BUS_13" B T 6400 8250 50 
-F19 "BUS_14" B T 6300 8250 50 
-F20 "BUS_15" B T 6200 8250 50 
-F21 "~SO~" I B 5300 9150 50 
+F11 "CLR" I T 5300 8250 50 
+F12 "BUS_8" B T 6900 8250 50 
+F13 "BUS_9" B T 6800 8250 50 
+F14 "BUS_10" B T 6700 8250 50 
+F15 "BUS_11" B T 6600 8250 50 
+F16 "BUS_12" B T 6500 8250 50 
+F17 "BUS_13" B T 6400 8250 50 
+F18 "BUS_14" B T 6300 8250 50 
+F19 "BUS_15" B T 6200 8250 50 
+F20 "~SPI~" I T 5800 8250 50 
+F21 "~SPO~" I T 5900 8250 50 
 $EndSheet
 Wire Wire Line
 	5400 6500 6850 6500
@@ -803,29 +806,29 @@ Wire Notes Line
 	1250 2250 1250 1450
 Text Notes 800  2200 1    30   Italic 0
 16 Bit Address Bus Extension
-Text HLabel 1200 2650 0    50   Input Italic 0
+Text HLabel 1200 2650 0    50   Input ~ 0
 ~BO~
-Text HLabel 1200 2750 0    50   Input Italic 0
+Text HLabel 1200 2750 0    50   Input ~ 0
 ~BI~
-Text HLabel 1200 2850 0    50   Input Italic 0
+Text HLabel 1200 2850 0    50   Input ~ 0
 ~CO~
-Text HLabel 1200 2950 0    50   Input Italic 0
+Text HLabel 1200 2950 0    50   Input ~ 0
 ~CI~
-Text HLabel 1200 3050 0    50   Input Italic 0
+Text HLabel 1200 3050 0    50   Input ~ 0
 ~DO~
-Text HLabel 1200 3150 0    50   Input Italic 0
+Text HLabel 1200 3150 0    50   Input ~ 0
 ~DI~
-Text HLabel 1200 3250 0    50   Input Italic 0
+Text HLabel 1200 3250 0    50   Input ~ 0
 ~EO~
-Text HLabel 1200 3350 0    50   Input Italic 0
+Text HLabel 1200 3350 0    50   Input ~ 0
 ~EI~
-Text HLabel 1200 3550 0    50   Input Italic 0
+Text HLabel 1200 3550 0    50   Input ~ 0
 ~HI~
-Text HLabel 1200 3450 0    50   Input Italic 0
+Text HLabel 1200 3450 0    50   Input ~ 0
 ~HO~
-Text HLabel 1200 3650 0    50   Input Italic 0
+Text HLabel 1200 3650 0    50   Input ~ 0
 ~LO~
-Text HLabel 1200 3750 0    50   Input Italic 0
+Text HLabel 1200 3750 0    50   Input ~ 0
 ~LI~
 Wire Wire Line
 	1200 2650 4150 2650
@@ -978,4 +981,62 @@ Wire Wire Line
 Wire Wire Line
 	1200 2350 3850 2350
 Connection ~ 4250 1500
+Text HLabel 1200 4050 0    50   Input ~ 0
+~PCO~
+Text HLabel 1200 4150 0    50   Input ~ 0
+~PCI~
+Wire Wire Line
+	2000 8250 2000 5400
+Wire Wire Line
+	2000 5400 1700 5400
+Wire Wire Line
+	1700 5400 1700 4050
+Wire Wire Line
+	1700 4050 1200 4050
+Wire Wire Line
+	1900 8250 1900 5500
+Wire Wire Line
+	1900 5500 1600 5500
+Wire Wire Line
+	1600 5500 1600 4150
+Wire Wire Line
+	1600 4150 1200 4150
+Text HLabel 1200 3850 0    50   Input ~ 0
+~SPO~
+Text HLabel 1200 3950 0    50   Input ~ 0
+~SPI~
+Wire Wire Line
+	1200 3850 1900 3850
+Wire Wire Line
+	1800 3950 1200 3950
+Wire Wire Line
+	1900 5200 3750 5200
+Wire Wire Line
+	3750 5200 3750 6550
+Wire Wire Line
+	3750 6550 5900 6550
+Wire Wire Line
+	5900 6550 5900 8250
+Wire Wire Line
+	1900 3850 1900 5200
+Wire Wire Line
+	5800 8250 5800 6600
+Wire Wire Line
+	5800 6600 3700 6600
+Wire Wire Line
+	3700 6600 3700 5300
+Wire Wire Line
+	3700 5300 1800 5300
+Wire Wire Line
+	1800 3950 1800 5300
+Text HLabel 1200 4300 0    50   Input ~ 0
+INCPC
+Wire Wire Line
+	1200 4300 1500 4300
+Wire Wire Line
+	1500 4300 1500 5600
+Wire Wire Line
+	1500 5600 2300 5600
+Wire Wire Line
+	2300 5600 2300 8250
 $EndSCHEMATC
