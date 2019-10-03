@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 16 26
 Title ""
-Date "2019-09-26"
+Date "2019-10-03"
 Rev "v0.1"
 Comp "Christopher Milan"
 Comment1 "Computer Science 4"
@@ -35,10 +35,6 @@ Wire Wire Line
 	3400 2400 1550 2400
 Wire Wire Line
 	1550 2500 3400 2500
-Wire Wire Line
-	3400 2600 2900 2600
-Wire Wire Line
-	1550 2700 2950 2700
 Wire Wire Line
 	3400 2800 3000 2800
 Wire Wire Line
@@ -294,14 +290,8 @@ Wire Wire Line
 	3000 2800 1550 2800
 Wire Wire Line
 	7000 2850 6550 2850
-Connection ~ 2950 2700
-Wire Wire Line
-	2950 2700 3400 2700
 Wire Wire Line
 	6500 2750 7000 2750
-Connection ~ 2900 2600
-Wire Wire Line
-	2900 2600 1550 2600
 Wire Wire Line
 	6500 1950 7000 1950
 Wire Wire Line
@@ -434,10 +424,6 @@ Wire Wire Line
 Wire Wire Line
 	3350 3500 3350 3800
 Wire Wire Line
-	2900 2600 2900 4250
-Wire Wire Line
-	2950 4200 2950 2700
-Wire Wire Line
 	3000 4150 3000 2800
 Wire Wire Line
 	3100 4050 3100 3000
@@ -568,61 +554,51 @@ Wire Wire Line
 Wire Wire Line
 	4850 5800 4850 5750
 Wire Wire Line
-	5150 5750 5150 6050
+	5150 5750 5150 5800
 Wire Wire Line
-	5150 6050 2900 6050
+	5250 5800 5250 5750
 Wire Wire Line
-	2900 6050 2900 4250
-Connection ~ 2900 4250
+	5350 5750 5350 5800
 Wire Wire Line
-	2950 4200 2950 6100
-Wire Wire Line
-	2950 6100 5250 6100
-Wire Wire Line
-	5250 6100 5250 5750
-Connection ~ 2950 4200
-Wire Wire Line
-	5350 5750 5350 6150
-Wire Wire Line
-	5350 6150 3000 6150
-Wire Wire Line
-	3000 6150 3000 4150
-Connection ~ 3000 4150
-Wire Wire Line
-	3050 6200 5450 6200
-Wire Wire Line
-	5450 6200 5450 5750
+	5450 5800 5450 5750
 Wire Wire Line
 	3050 2900 3050 4100
-Connection ~ 3050 4100
 Wire Wire Line
-	3050 4100 3050 6200
+	5550 5750 5550 5800
 Wire Wire Line
-	5550 5750 5550 6250
+	5650 5800 5650 5750
 Wire Wire Line
-	5550 6250 3100 6250
+	5750 5750 5750 5800
 Wire Wire Line
-	3100 6250 3100 4050
-Connection ~ 3100 4050
+	5850 5800 5850 5750
 Wire Wire Line
-	3150 4000 3150 6300
+	2950 2700 3400 2700
 Wire Wire Line
-	3150 6300 5650 6300
+	1550 2700 2950 2700
+Connection ~ 2950 2700
 Wire Wire Line
-	5650 6300 5650 5750
-Connection ~ 3150 4000
+	2950 4200 2950 2700
 Wire Wire Line
-	5750 5750 5750 6350
+	2900 2600 1550 2600
 Wire Wire Line
-	5750 6350 3200 6350
+	3400 2600 2900 2600
+Connection ~ 2900 2600
 Wire Wire Line
-	3200 6350 3200 3950
-Connection ~ 3200 3950
-Wire Wire Line
-	3250 3900 3250 6400
-Wire Wire Line
-	3250 6400 5850 6400
-Wire Wire Line
-	5850 6400 5850 5750
-Connection ~ 3250 3900
+	2900 2600 2900 4250
+Text HLabel 5150 5800 3    50   Output ~ 0
+RAMO_0
+Text HLabel 5250 5800 3    50   Output ~ 0
+RAMO_1
+Text HLabel 5350 5800 3    50   Output ~ 0
+RAMO_2
+Text HLabel 5450 5800 3    50   Output ~ 0
+RAMO_3
+Text HLabel 5550 5800 3    50   Output ~ 0
+RAMO_4
+Text HLabel 5650 5800 3    50   Output ~ 0
+RAMO_5
+Text HLabel 5750 5800 3    50   Output ~ 0
+RAMO_6
+Text HLabel 5850 5800 3    50   Output ~ 0
+RAMO_7
 $EndSCHEMATC
