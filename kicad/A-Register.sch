@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 11 26
+Sheet 2 26
 Title "Accumulator"
 Date "2019-10-03"
 Rev "v0.1"
@@ -683,6 +683,4 @@ Wire Wire Line
 Wire Wire Line
 	7600 1700 7600 2100
 Connection ~ 7600 1700
-Wire Wire Line
-	7600 1700 7700 1700
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 19 26
+Sheet 6 26
 Title ""
 Date "2019-10-03"
 Rev "v0.1"
@@ -33,10 +33,10 @@ A_1
 Text HLabel 4150 3050 1    50   Input ~ 0
 A_0
 $Comp
-L 74xx:74LS245 U20
+L 74xx:74LS245 U16
 U 1 1 5F91404F
 P 1650 4150
-F 0 "U20" V 1696 3306 50  0000 R CNN
+F 0 "U16" V 1696 3306 50  0000 R CNN
 F 1 "74LS245" V 1605 3306 50  0000 R CNN
 F 2 "" H 1650 4150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 1650 4150 50  0001 C CNN

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 26 26
+Sheet 13 26
 Title "Flags Register"
 Date "2019-10-03"
 Rev "v0.1"
@@ -340,8 +340,8 @@ AR Path="/5D9C722C/5DA6F82A" Ref="U?"  Part="1"
 AR Path="/5D9C73BD/5DA6F82A" Ref="U?"  Part="1" 
 AR Path="/5D9E93FA/5DA6F82A" Ref="U?"  Part="1" 
 AR Path="/5DA98D6D/5DA9AAB9/5DA6F82A" Ref="U?"  Part="1" 
-AR Path="/5DA9DA3D/5DA6F82A" Ref="U104"  Part="1" 
-F 0 "U104" V 7454 4494 50  0000 L CNN
+AR Path="/5DA9DA3D/5DA6F82A" Ref="U56"  Part="1" 
+F 0 "U56" V 7454 4494 50  0000 L CNN
 F 1 "74LS173" V 7545 4494 50  0000 L CNN
 F 2 "" H 7500 3550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS173" H 7500 3550 50  0001 C CNN
@@ -375,8 +375,8 @@ AR Path="/5D9C722C/5DA6F7FD" Ref="U?"  Part="1"
 AR Path="/5D9C73BD/5DA6F7FD" Ref="U?"  Part="1" 
 AR Path="/5D9E93FA/5DA6F7FD" Ref="U?"  Part="1" 
 AR Path="/5DA98D6D/5DA9AAB9/5DA6F7FD" Ref="U?"  Part="1" 
-AR Path="/5DA9DA3D/5DA6F7FD" Ref="U103"  Part="1" 
-F 0 "U103" V 2946 2706 50  0000 R CNN
+AR Path="/5DA9DA3D/5DA6F7FD" Ref="U55"  Part="1" 
+F 0 "U55" V 2946 2706 50  0000 R CNN
 F 1 "74LS245" V 2855 2706 50  0000 R CNN
 F 2 "" H 2900 3550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 2900 3550 50  0001 C CNN
