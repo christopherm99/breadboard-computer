@@ -1,0 +1,118 @@
+EESchema Schematic File Version 4
+LIBS:breadboard-computer-video-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS168 U?
+U 1 1 5DBA5B23
+P 3150 4600
+F 0 "U?" V 3196 3656 50  0000 R CNN
+F 1 "74LS168" V 3105 3656 50  0000 R CNN
+F 2 "" H 3150 4600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS168" H 3150 4600 50  0001 C CNN
+	1    3150 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS168 U?
+U 1 1 5DBA5B29
+P 5650 4600
+F 0 "U?" V 5696 3656 50  0000 R CNN
+F 1 "74LS168" V 5605 3656 50  0000 R CNN
+F 2 "" H 5650 4600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS168" H 5650 4600 50  0001 C CNN
+	1    5650 4600
+	0    -1   -1   0   
+$EndComp
+Text HLabel 6250 5500 3    50   Input ~ 0
+CP
+Wire Wire Line
+	3750 5100 3750 5500
+$Comp
+L power:GND #PWR?
+U 1 1 5DBA5B33
+P 6550 4600
+F 0 "#PWR?" H 6550 4350 50  0001 C CNN
+F 1 "GND" V 6555 4472 50  0000 R CNN
+F 2 "" H 6550 4600 50  0001 C CNN
+F 3 "" H 6550 4600 50  0001 C CNN
+	1    6550 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DBA5B39
+P 4050 4600
+F 0 "#PWR?" H 4050 4350 50  0001 C CNN
+F 1 "GND" V 4055 4472 50  0000 R CNN
+F 2 "" H 4050 4600 50  0001 C CNN
+F 3 "" H 4050 4600 50  0001 C CNN
+	1    4050 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DBA5B3F
+P 4750 4600
+F 0 "#PWR?" H 4750 4450 50  0001 C CNN
+F 1 "VCC" V 4768 4727 50  0000 L CNN
+F 2 "" H 4750 4600 50  0001 C CNN
+F 3 "" H 4750 4600 50  0001 C CNN
+	1    4750 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS168 U?
+U 1 1 5DBAB340
+P 8150 4600
+F 0 "U?" V 8196 3656 50  0000 R CNN
+F 1 "74LS168" V 8105 3656 50  0000 R CNN
+F 2 "" H 8150 4600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS168" H 8150 4600 50  0001 C CNN
+	1    8150 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 5500 8750 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5DBAB347
+P 9050 4600
+F 0 "#PWR?" H 9050 4350 50  0001 C CNN
+F 1 "GND" V 9055 4472 50  0000 R CNN
+F 2 "" H 9050 4600 50  0001 C CNN
+F 3 "" H 9050 4600 50  0001 C CNN
+	1    9050 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DBAB34D
+P 7250 4600
+F 0 "#PWR?" H 7250 4450 50  0001 C CNN
+F 1 "VCC" V 7268 4727 50  0000 L CNN
+F 2 "" H 7250 4600 50  0001 C CNN
+F 3 "" H 7250 4600 50  0001 C CNN
+	1    7250 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 5500 6250 5500
+Wire Wire Line
+	6250 5100 6250 5500
+Connection ~ 6250 5500
+Wire Wire Line
+	6250 5500 8750 5500
+$EndSCHEMATC

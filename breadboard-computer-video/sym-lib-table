@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Character_Generator)(type Legacy)(uri ${KIPRJMOD}/Character_Generator.lib)(options "")(descr ""))
+  (lib (name breadboard-computer-video-rescue)(type Legacy)(uri ${KIPRJMOD}/breadboard-computer-video-rescue.lib)(options "")(descr ""))
 )

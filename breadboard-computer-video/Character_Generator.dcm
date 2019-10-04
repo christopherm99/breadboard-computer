@@ -4,4 +4,8 @@ $CMP MCM2513
 F https://www.applefritter.com/files/signetics2513.pdf
 $ENDCMP
 #
+$CMP MCM2513_Original
+F https://www.applefritter.com/files/signetics2513.pdf
+$ENDCMP
+#
 #End Doc Library

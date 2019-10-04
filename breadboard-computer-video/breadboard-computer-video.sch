@@ -1,4 +1,220 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:breadboard-computer-video-cache
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:4021 U?
+U 1 1 5D92BCAE
+P 6650 5650
+F 0 "U?" H 6650 6631 50  0000 C CNN
+F 1 "4021" H 6650 6540 50  0000 C CNN
+F 2 "" H 6650 5800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4021B.pdf" H 6650 5800 50  0001 C CNN
+	1    6650 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Character_Generator:MCM2513 U?
+U 1 1 5D9283DA
+P 4700 5650
+F 0 "U?" V 4654 6344 50  0000 L CNN
+F 1 "MCM2513" V 4745 6344 50  0000 L CNN
+F 2 "" H 4700 6650 50  0001 C CNN
+F 3 "https://www.applefritter.com/files/signetics2513.pdf" H 4700 6650 50  0001 C CNN
+	1    4700 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 6050 4750 6150
+Wire Wire Line
+	6550 6150 6550 6050
+Wire Wire Line
+	4850 6050 4850 6200
+Wire Wire Line
+	4850 6200 6650 6200
+Wire Wire Line
+	6650 6200 6650 6050
+Wire Wire Line
+	4950 6050 4950 6250
+Wire Wire Line
+	6750 6250 6750 6050
+Wire Wire Line
+	5050 6050 5050 6300
+Wire Wire Line
+	5050 6300 6850 6300
+Wire Wire Line
+	6850 6300 6850 6050
+Wire Wire Line
+	5150 6050 5150 6350
+Wire Wire Line
+	5150 6350 6950 6350
+Wire Wire Line
+	6950 6350 6950 6050
+Wire Wire Line
+	6550 6150 4750 6150
+Wire Wire Line
+	6750 6250 4950 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5D960434
+P 9200 5550
+F 0 "#PWR?" H 9200 5300 50  0001 C CNN
+F 1 "GND" H 9205 5377 50  0000 C CNN
+F 2 "" H 9200 5550 50  0001 C CNN
+F 3 "" H 9200 5550 50  0001 C CNN
+	1    9200 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D961035
+P 9200 5400
+F 0 "R?" H 9268 5446 50  0000 L CNN
+F 1 "68" H 9268 5355 50  0000 L CNN
+F 2 "" V 9240 5390 50  0001 C CNN
+F 3 "~" H 9200 5400 50  0001 C CNN
+	1    9200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D9635AA
+P 9200 5100
+F 0 "R?" H 9268 5146 50  0000 L CNN
+F 1 "10" H 9268 5055 50  0000 L CNN
+F 2 "" V 9240 5090 50  0001 C CNN
+F 3 "~" H 9200 5100 50  0001 C CNN
+	1    9200 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 5250 10350 5250
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 5D965299
+P 9100 4750
+F 0 "Q?" H 9291 4796 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 9291 4705 50  0000 L CNN
+F 2 "" H 9300 4850 50  0001 C CNN
+F 3 "~" H 9100 4750 50  0001 C CNN
+	1    9100 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 9200 5250
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 5D969DDB
+P 9100 4000
+F 0 "Q?" H 9291 4046 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 9291 3955 50  0000 L CNN
+F 2 "" H 9300 4100 50  0001 C CNN
+F 3 "~" H 9100 4000 50  0001 C CNN
+	1    9100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4200 9200 4550
+Wire Wire Line
+	8900 4750 8100 4750
+$Comp
+L Device:R_US R?
+U 1 1 5D96E054
+P 8100 4900
+F 0 "R?" H 8168 4946 50  0000 L CNN
+F 1 "2.2k" H 8168 4855 50  0000 L CNN
+F 2 "" V 8140 4890 50  0001 C CNN
+F 3 "~" H 8100 4900 50  0001 C CNN
+	1    8100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D96E923
+P 7950 4750
+F 0 "R?" H 8018 4796 50  0000 L CNN
+F 1 "10k" H 8018 4705 50  0000 L CNN
+F 2 "" V 7990 4740 50  0001 C CNN
+F 3 "~" H 7950 4750 50  0001 C CNN
+	1    7950 4750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8100 4750
+$Comp
+L power:+5V #PWR?
+U 1 1 5D96EE8A
+P 8100 5050
+F 0 "#PWR?" H 8100 4900 50  0001 C CNN
+F 1 "+5V" H 8115 5223 50  0000 C CNN
+F 2 "" H 8100 5050 50  0001 C CNN
+F 3 "" H 8100 5050 50  0001 C CNN
+	1    8100 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D96F3C9
+P 9200 3800
+F 0 "#PWR?" H 9200 3650 50  0001 C CNN
+F 1 "+5V" H 9215 3973 50  0000 C CNN
+F 2 "" H 9200 3800 50  0001 C CNN
+F 3 "" H 9200 3800 50  0001 C CNN
+	1    9200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U?
+U 1 1 5D974F6E
+P 8600 4000
+F 0 "U?" H 8600 4325 50  0000 C CNN
+F 1 "74LS02" H 8600 4234 50  0000 C CNN
+F 2 "" H 8600 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 8600 4000 50  0001 C CNN
+	1    8600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3900 8150 3900
+Wire Wire Line
+	8150 3900 8150 2950
+Wire Wire Line
+	8300 4100 7650 4100
+Wire Wire Line
+	7650 4100 7650 2950
+Wire Wire Line
+	7800 4750 6250 4750
+Wire Wire Line
+	6250 4750 6250 5250
+$Sheet
+S 6000 1700 1200 550 
+U 5D9B51E1
+F0 "Vertical_Generator" 50
+F1 "Vertical_Generator.sch" 50
+F2 "CP" I L 6000 2000 50 
+F3 "V_Sync" O R 7200 2100 50 
+F4 "V_Blank" O R 7200 1900 50 
+$EndSheet
+$Sheet
+S 3950 1700 1200 550 
+U 5D9B557F
+F0 "Horizontal_Generator" 50
+F1 "Horizontal_Generator.sch" 50
+$EndSheet
+Text HLabel 3900 2000 2    50   Input ~ 0
+CP
+Text HLabel 5200 1850 0    50   Input ~ 0
+H_Sync
+Text HLabel 5200 2100 0    50   Input ~ 0
+H_Blank
 $EndSCHEMATC
