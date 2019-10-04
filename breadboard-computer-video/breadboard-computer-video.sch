@@ -210,11 +210,8 @@ S 3950 1700 1200 550
 U 5D9B557F
 F0 "Horizontal_Generator" 50
 F1 "Horizontal_Generator.sch" 50
+F2 "CP" I L 3950 2000 50 
+F3 "H_Blank" O R 5150 1900 50 
+F4 "H_Sync" O R 5150 2100 50 
 $EndSheet
-Text HLabel 3900 2000 2    50   Input ~ 0
-CP
-Text HLabel 5200 1850 0    50   Input ~ 0
-H_Sync
-Text HLabel 5200 2100 0    50   Input ~ 0
-H_Blank
 $EndSCHEMATC
