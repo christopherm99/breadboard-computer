@@ -15,28 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 74xx:74LS168 U?
-U 1 1 5D9CF495
-P 4300 4700
-F 0 "U?" V 4346 3756 50  0000 R CNN
-F 1 "74LS168" V 4255 3756 50  0000 R CNN
-F 2 "" H 4300 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS168" H 4300 4700 50  0001 C CNN
-	1    4300 4700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L 74xx:74LS168 U?
-U 1 1 5D9D01E7
-P 6600 4700
-F 0 "U?" V 6646 3756 50  0000 R CNN
-F 1 "74LS168" V 6555 3756 50  0000 R CNN
-F 2 "" H 6600 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS168" H 6600 4700 50  0001 C CNN
-	1    6600 4700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L 74xx:74LS08 U?
 U 1 1 5D9DAE24
 P 3800 2850
@@ -159,7 +137,6 @@ Wire Wire Line
 	4100 3900 4100 4200
 Wire Wire Line
 	4100 4200 4000 4200
-Connection ~ 4000 4200
 Wire Wire Line
 	4600 3500 4600 3800
 Wire Wire Line
@@ -193,7 +170,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6200 3450 50  0001 C CNN
 	2    6200 3450
 	0    -1   -1   0   
 $EndComp
-Text HLabel 6100 5600 3    50   Input ~ 0
+Text HLabel 6800 5600 3    50   Input ~ 0
 CP
 Text HLabel 3800 2300 1    50   Output ~ 0
 V_Sync
@@ -206,32 +183,26 @@ Wire Wire Line
 	6200 3000 6200 3150
 Wire Wire Line
 	3800 2300 3800 2550
-Wire Wire Line
-	4900 5200 4900 5600
-Wire Wire Line
-	4900 5600 7200 5600
-Wire Wire Line
-	7200 5600 7200 5200
 $Comp
 L power:GND #PWR?
 U 1 1 5DB889DE
-P 7500 4700
-F 0 "#PWR?" H 7500 4450 50  0001 C CNN
-F 1 "GND" V 7505 4572 50  0000 R CNN
-F 2 "" H 7500 4700 50  0001 C CNN
-F 3 "" H 7500 4700 50  0001 C CNN
-	1    7500 4700
+P 7300 4700
+F 0 "#PWR?" H 7300 4450 50  0001 C CNN
+F 1 "GND" V 7305 4572 50  0000 R CNN
+F 2 "" H 7300 4700 50  0001 C CNN
+F 3 "" H 7300 4700 50  0001 C CNN
+	1    7300 4700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DB893FF
-P 5200 4700
-F 0 "#PWR?" H 5200 4450 50  0001 C CNN
-F 1 "GND" V 5205 4572 50  0000 R CNN
-F 2 "" H 5200 4700 50  0001 C CNN
-F 3 "" H 5200 4700 50  0001 C CNN
-	1    5200 4700
+P 5000 4700
+F 0 "#PWR?" H 5000 4450 50  0001 C CNN
+F 1 "GND" V 5005 4572 50  0000 R CNN
+F 2 "" H 5000 4700 50  0001 C CNN
+F 3 "" H 5000 4700 50  0001 C CNN
+	1    5000 4700
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -256,4 +227,46 @@ F 3 "" H 5700 4700 50  0001 C CNN
 	1    5700 4700
 	0    -1   -1   0   
 $EndComp
+$Comp
+L 74xx:74LS161 U?
+U 1 1 5DAF5520
+P 6500 4700
+F 0 "U?" V 6546 3856 50  0000 R CNN
+F 1 "74LS161" V 6455 3856 50  0000 R CNN
+F 2 "" H 6500 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 6500 4700 50  0001 C CNN
+	1    6500 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 5200 6800 5600
+$Comp
+L 74xx:74LS161 U?
+U 1 1 5DB20441
+P 4200 4700
+F 0 "U?" V 4246 3856 50  0000 R CNN
+F 1 "74LS161" V 4155 3856 50  0000 R CNN
+F 2 "" H 4200 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 4200 4700 50  0001 C CNN
+	1    4200 4700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4000 4200
+Wire Wire Line
+	4500 5200 4500 5600
+Wire Wire Line
+	4500 5600 6800 5600
+Wire Wire Line
+	4700 5200 4700 5400
+Wire Wire Line
+	4700 5400 7000 5400
+Wire Wire Line
+	7000 5400 7000 5200
+Wire Wire Line
+	5800 2200 7750 2200
+Wire Wire Line
+	7750 5400 7000 5400
+Connection ~ 7000 5400
+Wire Wire Line
+	7750 2200 7750 5400
 $EndSCHEMATC
