@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -14,19 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L 4xxx:4021 U?
-U 1 1 5D92BCAE
-P 6600 4500
-F 0 "U?" H 6600 5481 50  0000 C CNN
-F 1 "4021" H 6600 5390 50  0000 C CNN
-F 2 "" H 6600 4650 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4021B.pdf" H 6600 4650 50  0001 C CNN
-	1    6600 4500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6900 5200 6900 4900
 $Comp
 L power:GND #PWR?
 U 1 1 5D960434
@@ -149,8 +136,6 @@ Wire Wire Line
 	6850 2750 6850 2250
 Wire Wire Line
 	7000 2950 6650 2950
-Wire Wire Line
-	6200 3600 6200 4100
 $Sheet
 S 6850 1300 1200 550 
 U 5D9B51E1
@@ -295,62 +280,16 @@ Wire Wire Line
 Connection ~ 4100 1600
 Wire Wire Line
 	7600 3600 7300 3600
-Wire Wire Line
-	6200 3600 7000 3600
-$Comp
-L power:+5V #PWR?
-U 1 1 5DB2A331
-P 7400 4500
-F 0 "#PWR?" H 7400 4350 50  0001 C CNN
-F 1 "+5V" V 7415 4628 50  0000 L CNN
-F 2 "" H 7400 4500 50  0001 C CNN
-F 3 "" H 7400 4500 50  0001 C CNN
-	1    7400 4500
-	0    1    1    0   
-$EndComp
 $Comp
 L power:Earth #PWR?
 U 1 1 5DB2AB9D
-P 5800 4500
-F 0 "#PWR?" H 5800 4250 50  0001 C CNN
-F 1 "Earth" H 5800 4350 50  0001 C CNN
-F 2 "" H 5800 4500 50  0001 C CNN
-F 3 "~" H 5800 4500 50  0001 C CNN
-	1    5800 4500
+P 1100 7550
+F 0 "#PWR?" H 1100 7300 50  0001 C CNN
+F 1 "Earth" H 1100 7400 50  0001 C CNN
+F 2 "" H 1100 7550 50  0001 C CNN
+F 3 "~" H 1100 7550 50  0001 C CNN
+	1    1100 7550
 	0    1    1    0   
-$EndComp
-$Comp
-L power:-12V #PWR?
-U 1 1 5DB2DF56
-P 5000 5800
-F 0 "#PWR?" H 5000 5900 50  0001 C CNN
-F 1 "-12V" H 5015 5973 50  0000 C CNN
-F 2 "" H 5000 5800 50  0001 C CNN
-F 3 "" H 5000 5800 50  0001 C CNN
-	1    5000 5800
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5DB2E568
-P 4600 6300
-F 0 "#PWR?" H 4600 6150 50  0001 C CNN
-F 1 "+5V" V 4615 6428 50  0000 L CNN
-F 2 "" H 4600 6300 50  0001 C CNN
-F 3 "" H 4600 6300 50  0001 C CNN
-	1    4600 6300
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:-5V #PWR?
-U 1 1 5DB2FED5
-P 4600 5000
-F 0 "#PWR?" H 4600 5100 50  0001 C CNN
-F 1 "-5V" V 4615 5128 50  0000 L CNN
-F 2 "" H 4600 5000 50  0001 C CNN
-F 3 "" H 4600 5000 50  0001 C CNN
-	1    4600 5000
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5150 1600 4900 1600
@@ -370,63 +309,9 @@ Wire Wire Line
 Wire Wire Line
 	5000 5300 6800 5300
 Wire Wire Line
-	6800 4900 6800 5300
-Wire Wire Line
 	5000 5400 6700 5400
 Wire Wire Line
-	6700 4900 6700 5400
-Wire Wire Line
 	5000 5500 6600 5500
-Wire Wire Line
-	6600 4900 6600 5500
-Wire Wire Line
-	5000 5600 6500 5600
-Wire Wire Line
-	6500 4900 6500 5600
-$Comp
-L Character_Generator:MCM2513 U?
-U 1 1 5DBA8516
-P 4600 5650
-F 0 "U?" H 4600 4819 50  0000 C CNN
-F 1 "MCM2513" H 4600 4910 50  0000 C CNN
-F 2 "" H 4600 6650 50  0001 C CNN
-F 3 "https://www.applefritter.com/files/signetics2513.pdf" H 4600 6650 50  0001 C CNN
-	1    4600 5650
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DBAE66C
-P 5000 6100
-F 0 "#PWR?" H 5000 5850 50  0001 C CNN
-F 1 "GND" V 5005 5972 50  0000 R CNN
-F 2 "" H 5000 6100 50  0001 C CNN
-F 3 "" H 5000 6100 50  0001 C CNN
-	1    5000 6100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DB56FB9
-P 2450 6500
-F 0 "#PWR?" H 2450 6250 50  0001 C CNN
-F 1 "GND" V 2455 6372 50  0000 R CNN
-F 2 "" H 2450 6500 50  0001 C CNN
-F 3 "" H 2450 6500 50  0001 C CNN
-	1    2450 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS161 U?
-U 1 1 5DB47A53
-P 2450 5700
-F 0 "U?" V 2496 4856 50  0000 R CNN
-F 1 "74LS161" V 2405 4856 50  0000 R CNN
-F 2 "" H 2450 5700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 2450 5700 50  0001 C CNN
-	1    2450 5700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 5200 3400 5200
 $Comp
@@ -451,11 +336,11 @@ Wire Wire Line
 Wire Wire Line
 	10100 6350 5600 6350
 Wire Wire Line
-	5600 6350 5600 7450
+	5600 6350 5600 7400
 Wire Wire Line
-	5600 7450 1850 7450
+	5600 7400 1850 7400
 Wire Wire Line
-	1850 7450 1850 7050
+	1850 7400 1850 7050
 Wire Wire Line
 	3300 7250 2050 7250
 Wire Wire Line
@@ -478,28 +363,20 @@ Wire Wire Line
 Wire Wire Line
 	4900 1600 4900 1000
 Wire Wire Line
-	4900 1000 1150 1000
+	4900 1000 1650 1000
 Wire Wire Line
-	1150 1000 1150 6000
+	700  1000 700  6000
 Wire Wire Line
-	1150 6000 1950 6000
+	700  6000 1950 6000
 Connection ~ 4900 1600
 Wire Wire Line
 	4900 1600 4800 1600
 Wire Wire Line
 	3400 6600 3400 5400
 Wire Wire Line
-	6000 4900 6000 5000
-Wire Wire Line
 	6000 5000 4900 5000
 Wire Wire Line
 	4900 5000 4900 1600
-$Sheet
-S 2350 3650 1750 550 
-U 5DCCFA8E
-F0 "Position_Counter.sch" 50
-F1 "Position_Counter.sch" 50
-$EndSheet
 Wire Wire Line
 	2950 5400 4200 5400
 Wire Wire Line
@@ -511,4 +388,417 @@ Wire Wire Line
 	3400 5300 4200 5300
 Wire Wire Line
 	3400 5200 3400 5400
+$Comp
+L 74xx:74LS163 U?
+U 1 1 5E0B242E
+P 2450 5700
+F 0 "U?" H 2450 6681 50  0000 C CNN
+F 1 "74LS163" H 2450 6590 50  0000 C CNN
+F 2 "" H 2450 5700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS163" H 2450 5700 50  0001 C CNN
+	1    2450 5700
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 900  3350 1050 1200
+U 5DCCFA8E
+F0 "Position_Counter.sch" 50
+F1 "Position_Counter.sch" 50
+F2 "CLK" I L 900 3600 50 
+F3 "VBLANK" I L 900 3450 50 
+F4 "A0" O R 1950 3500 50 
+F5 "A1" O R 1950 3600 50 
+F6 "A2" O R 1950 3700 50 
+F7 "A3" O R 1950 3800 50 
+F8 "A4" O R 1950 3900 50 
+F9 "A5" O R 1950 4000 50 
+F10 "A6" O R 1950 4100 50 
+F11 "A7" O R 1950 4200 50 
+F12 "A8" O R 1950 4300 50 
+F13 "A9" O R 1950 4400 50 
+$EndSheet
+$Comp
+L Memory_EEPROM:28C256 U?
+U 1 1 5E1F0F95
+P 4600 6100
+F 0 "U?" H 4600 7381 50  0000 C CNN
+F 1 "28C256" H 4600 7290 50  0000 C CNN
+F 2 "" H 4600 6100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 4600 6100 50  0001 C CNN
+	1    4600 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5600 6500 5600
+NoConn ~ 5000 5900
+NoConn ~ 5000 5800
+NoConn ~ 5000 5700
+Wire Wire Line
+	3550 3500 4150 3500
+Wire Wire Line
+	4150 3500 4150 5500
+Wire Wire Line
+	4150 5500 4200 5500
+Wire Wire Line
+	4200 5600 4100 5600
+Wire Wire Line
+	4100 5600 4100 3600
+Wire Wire Line
+	4100 3600 3550 3600
+Wire Wire Line
+	3550 3700 4050 3700
+Wire Wire Line
+	4050 3700 4050 5700
+Wire Wire Line
+	4050 5700 4200 5700
+Wire Wire Line
+	4200 5800 4000 5800
+Wire Wire Line
+	4000 5800 4000 3800
+Wire Wire Line
+	4000 3800 3550 3800
+Wire Wire Line
+	3550 3900 3950 3900
+Wire Wire Line
+	3950 3900 3950 5900
+Wire Wire Line
+	3950 5900 4200 5900
+Wire Wire Line
+	4200 6000 3900 6000
+Wire Wire Line
+	3900 6000 3900 4000
+Wire Wire Line
+	3900 4000 3550 4000
+Wire Wire Line
+	3550 4100 3850 4100
+Wire Wire Line
+	3850 4100 3850 6100
+Wire Wire Line
+	3850 6100 4200 6100
+Wire Wire Line
+	3800 4200 3800 6200
+Wire Wire Line
+	3800 6200 4200 6200
+NoConn ~ 4200 6300
+NoConn ~ 4200 6400
+NoConn ~ 4200 6500
+NoConn ~ 4200 6600
+Wire Wire Line
+	4600 7200 4600 7550
+Connection ~ 4600 7550
+Wire Wire Line
+	4600 7550 4200 7550
+Wire Wire Line
+	2450 6500 2450 7550
+Connection ~ 2450 7550
+Wire Wire Line
+	2450 7550 1100 7550
+Wire Wire Line
+	6500 4900 6500 5600
+Wire Wire Line
+	6600 4900 6600 5500
+Wire Wire Line
+	6700 4900 6700 5400
+Wire Wire Line
+	6800 4900 6800 5300
+Wire Wire Line
+	6900 5200 6900 4900
+Wire Wire Line
+	6000 4900 6000 5000
+Wire Wire Line
+	4600 7550 5800 7550
+$Comp
+L 4xxx:4021 U?
+U 1 1 5D92BCAE
+P 6600 4500
+F 0 "U?" H 6600 5481 50  0000 C CNN
+F 1 "4021" H 6600 5390 50  0000 C CNN
+F 2 "" H 6600 4650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4021B.pdf" H 6600 4650 50  0001 C CNN
+	1    6600 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 4500 5800 7550
+Wire Wire Line
+	4200 6900 4100 6900
+Wire Wire Line
+	4200 6800 4000 6800
+Wire Wire Line
+	4000 6800 4000 7550
+Connection ~ 4000 7550
+Wire Wire Line
+	4000 7550 2450 7550
+Wire Wire Line
+	4200 7000 4200 7550
+Connection ~ 4200 7550
+Wire Wire Line
+	4000 7550 4200 7550
+Wire Wire Line
+	6850 7700 4100 7700
+Wire Wire Line
+	6850 7700 6850 6200
+Wire Wire Line
+	6850 6200 7400 6200
+Wire Wire Line
+	7400 6200 7400 4500
+Wire Wire Line
+	4100 6900 4100 7700
+Connection ~ 4100 7700
+Wire Wire Line
+	4100 7700 1100 7700
+$Comp
+L power:VCC #PWR?
+U 1 1 5E2D656A
+P 1100 7700
+F 0 "#PWR?" H 1100 7550 50  0001 C CNN
+F 1 "VCC" V 1118 7827 50  0000 L CNN
+F 2 "" H 1100 7700 50  0001 C CNN
+F 3 "" H 1100 7700 50  0001 C CNN
+	1    1100 7700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8050 1500 8150 1500
+Wire Wire Line
+	8150 1500 8150 900 
+Wire Wire Line
+	8150 900  6550 900 
+Wire Wire Line
+	800  900  800  3450
+Wire Wire Line
+	800  3450 900  3450
+$Comp
+L 74xx:74LS163 U?
+U 1 1 5E36C15A
+P 1950 2200
+F 0 "U?" V 1904 3044 50  0000 L CNN
+F 1 "74LS163" V 1995 3044 50  0000 L CNN
+F 2 "" H 1950 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS163" H 1950 2200 50  0001 C CNN
+	1    1950 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1700 1650 1000
+Connection ~ 1650 1000
+Wire Wire Line
+	1650 1000 700  1000
+$Comp
+L 74xx:74LS08 U?
+U 2 1 5E37DDE5
+P 2350 1400
+F 0 "U?" V 2396 1220 50  0000 R CNN
+F 1 "74LS08" V 2305 1220 50  0000 R CNN
+F 2 "" H 2350 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2350 1400 50  0001 C CNN
+	2    2350 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 1100 1450 1100
+Wire Wire Line
+	1450 1100 600  1100
+Wire Wire Line
+	600  3600 900  3600
+Connection ~ 1450 1100
+NoConn ~ 2450 2700
+NoConn ~ 2350 2700
+NoConn ~ 2250 2700
+NoConn ~ 2150 2700
+NoConn ~ 1950 2700
+$Comp
+L 74xx:74LS04 U?
+U 3 1 5E3AF993
+P 1450 1400
+F 0 "U?" V 1404 1580 50  0000 L CNN
+F 1 "74LS04" V 1495 1580 50  0000 L CNN
+F 2 "" H 1450 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 1450 1400 50  0001 C CNN
+	3    1450 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E3BFB68
+P 1950 1550
+F 0 "#PWR?" H 1950 1400 50  0001 C CNN
+F 1 "VCC" H 1967 1723 50  0000 C CNN
+F 2 "" H 1950 1550 50  0001 C CNN
+F 3 "" H 1950 1550 50  0001 C CNN
+	1    1950 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1550 1850 1550
+Wire Wire Line
+	1750 1550 1750 1700
+Wire Wire Line
+	1850 1700 1850 1550
+Connection ~ 1850 1550
+Wire Wire Line
+	1850 1550 1750 1550
+Wire Wire Line
+	1950 1550 1950 1700
+Connection ~ 1950 1550
+$Comp
+L power:Earth #PWR?
+U 1 1 5E3D9597
+P 7100 5050
+F 0 "#PWR?" H 7100 4800 50  0001 C CNN
+F 1 "Earth" H 7100 4900 50  0001 C CNN
+F 2 "" H 7100 5050 50  0001 C CNN
+F 3 "~" H 7100 5050 50  0001 C CNN
+	1    7100 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5050 7100 4900
+Wire Wire Line
+	7000 4900 7000 5050
+Wire Wire Line
+	7000 5050 7100 5050
+Connection ~ 7100 5050
+Wire Wire Line
+	7100 5050 7200 5050
+Wire Wire Line
+	7200 5050 7200 4900
+Wire Wire Line
+	6200 4900 6200 5100
+Wire Wire Line
+	6200 5100 5150 5100
+Wire Wire Line
+	3550 4200 3800 4200
+Wire Wire Line
+	5150 3250 600  3250
+Wire Wire Line
+	5150 3250 5150 5100
+Wire Wire Line
+	600  1100 600  3250
+Wire Wire Line
+	600  3250 600  3600
+Connection ~ 600  3250
+Wire Wire Line
+	1950 3500 2550 3500
+Wire Wire Line
+	1950 3600 2550 3600
+Wire Wire Line
+	1950 3700 2550 3700
+Wire Wire Line
+	1950 3800 2550 3800
+Wire Wire Line
+	1950 3900 2550 3900
+Wire Wire Line
+	1950 4000 2550 4000
+Wire Wire Line
+	1950 4100 2550 4100
+Wire Wire Line
+	1950 4200 2550 4200
+Wire Wire Line
+	1950 4300 2550 4300
+Wire Wire Line
+	1950 4400 2550 4400
+$Sheet
+S 2550 3350 1000 1200
+U 5E4AC355
+F0 "VRAM" 50
+F1 "VRAM.sch" 50
+F2 "A0" I L 2550 3500 50 
+F3 "A1" I L 2550 3600 50 
+F4 "A2" I L 2550 3700 50 
+F5 "A3" I L 2550 3800 50 
+F6 "A4" I L 2550 3900 50 
+F7 "A5" I L 2550 4000 50 
+F8 "A6" I L 2550 4100 50 
+F9 "A7" I L 2550 4200 50 
+F10 "A8" I L 2550 4300 50 
+F11 "A9" I L 2550 4400 50 
+F12 "D0" O R 3550 3500 50 
+F13 "D1" O R 3550 3600 50 
+F14 "D2" O R 3550 3700 50 
+F15 "D3" O R 3550 3800 50 
+F16 "D4" O R 3550 3900 50 
+F17 "D5" O R 3550 4000 50 
+F18 "D6" O R 3550 4100 50 
+F19 "D7" O R 3550 4200 50 
+$EndSheet
+Wire Wire Line
+	4100 3150 3300 3150
+Connection ~ 3300 3150
+Wire Wire Line
+	3300 3150 1150 3150
+Connection ~ 1150 3150
+Wire Wire Line
+	1150 3150 1000 3150
+Wire Wire Line
+	1150 2200 1150 3150
+$Comp
+L power:Earth #PWR?
+U 1 1 5E98DD67
+P 1000 3150
+F 0 "#PWR?" H 1000 2900 50  0001 C CNN
+F 1 "Earth" H 1000 3000 50  0001 C CNN
+F 2 "" H 1000 3150 50  0001 C CNN
+F 3 "~" H 1000 3150 50  0001 C CNN
+	1    1000 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E98E66C
+P 2750 2200
+F 0 "#PWR?" H 2750 2050 50  0001 C CNN
+F 1 "VCC" V 2767 2328 50  0000 L CNN
+F 2 "" H 2750 2200 50  0001 C CNN
+F 3 "" H 2750 2200 50  0001 C CNN
+	1    2750 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 3 1 5E99B421
+P 6700 3600
+F 0 "U?" H 6700 3925 50  0000 C CNN
+F 1 "74LS08" H 6700 3834 50  0000 C CNN
+F 2 "" H 6700 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6700 3600 50  0001 C CNN
+	3    6700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3700 6200 3700
+Wire Wire Line
+	6200 3700 6200 4100
+Wire Wire Line
+	6200 3350 6200 3500
+Wire Wire Line
+	6200 3500 6400 3500
+Wire Wire Line
+	6350 1500 6450 1500
+Wire Wire Line
+	6450 1500 6450 2050
+Wire Wire Line
+	6450 2050 6100 2050
+Wire Wire Line
+	6100 2050 6100 2750
+Wire Wire Line
+	6550 900  6550 2150
+Wire Wire Line
+	6550 2150 6300 2150
+Wire Wire Line
+	6300 2150 6300 2750
+Connection ~ 6550 900 
+Wire Wire Line
+	6550 900  800  900 
+$Comp
+L 74xx:74LS02 U?
+U 2 1 5E9FFB0B
+P 6200 3050
+F 0 "U?" V 6154 3238 50  0000 L CNN
+F 1 "74LS02" V 6245 3238 50  0000 L CNN
+F 2 "" H 6200 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 6200 3050 50  0001 C CNN
+	2    6200 3050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

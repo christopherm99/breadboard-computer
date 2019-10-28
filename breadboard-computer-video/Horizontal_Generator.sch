@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -14,43 +14,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 8350 6050 3    50   Input ~ 0
+Text HLabel 8350 6300 3    50   Input ~ 0
 CP
 Wire Wire Line
 	3350 5650 3350 6050
-$Comp
-L power:GND #PWR?
-U 1 1 5DBA5B33
-P 6350 5150
-F 0 "#PWR?" H 6350 4900 50  0001 C CNN
-F 1 "GND" V 6355 5022 50  0000 R CNN
-F 2 "" H 6350 5150 50  0001 C CNN
-F 3 "" H 6350 5150 50  0001 C CNN
-	1    6350 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DBA5B39
-P 3850 5150
-F 0 "#PWR?" H 3850 4900 50  0001 C CNN
-F 1 "GND" V 3855 5022 50  0000 R CNN
-F 2 "" H 3850 5150 50  0001 C CNN
-F 3 "" H 3850 5150 50  0001 C CNN
-	1    3850 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DBAB347
-P 8850 5150
-F 0 "#PWR?" H 8850 4900 50  0001 C CNN
-F 1 "GND" V 8855 5022 50  0000 R CNN
-F 2 "" H 8850 5150 50  0001 C CNN
-F 3 "" H 8850 5150 50  0001 C CNN
-	1    8850 5150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5850 5650 5850 6050
 $Comp
@@ -317,39 +284,6 @@ Text HLabel 7450 3200 1    50   Output ~ 0
 H_Blank
 Text HLabel 6650 2050 1    50   Output ~ 0
 H_Sync
-$Comp
-L 74xx:74LS161 U?
-U 1 1 5DB5E3FC
-P 5550 5150
-F 0 "U?" V 5596 4306 50  0000 R CNN
-F 1 "74LS161" V 5505 4306 50  0000 R CNN
-F 2 "" H 5550 5150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 5550 5150 50  0001 C CNN
-	1    5550 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L 74xx:74LS161 U?
-U 1 1 5DB6099E
-P 3050 5150
-F 0 "U?" V 3096 4306 50  0000 R CNN
-F 1 "74LS161" V 3005 4306 50  0000 R CNN
-F 2 "" H 3050 5150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 3050 5150 50  0001 C CNN
-	1    3050 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L 74xx:74LS161 U?
-U 1 1 5DB5CF73
-P 8050 5150
-F 0 "U?" V 8096 4306 50  0000 R CNN
-F 1 "74LS161" V 8005 4306 50  0000 R CNN
-F 2 "" H 8050 5150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 8050 5150 50  0001 C CNN
-	1    8050 5150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8350 5650 8350 6050
 Connection ~ 5850 6050
@@ -564,4 +498,65 @@ Wire Wire Line
 Connection ~ 5350 5750
 Wire Wire Line
 	5350 5750 6050 5750
+$Comp
+L 74xx:74LS163 U?
+U 1 1 5E152224
+P 3050 5150
+F 0 "U?" V 3096 4306 50  0000 R CNN
+F 1 "74LS163" V 3005 4306 50  0000 R CNN
+F 2 "" H 3050 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS163" H 3050 5150 50  0001 C CNN
+	1    3050 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS163 U?
+U 1 1 5E1579F5
+P 5550 5150
+F 0 "U?" V 5596 4306 50  0000 R CNN
+F 1 "74LS163" V 5505 4306 50  0000 R CNN
+F 2 "" H 5550 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS163" H 5550 5150 50  0001 C CNN
+	1    5550 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS163 U?
+U 1 1 5E15D181
+P 8050 5150
+F 0 "U?" V 8096 4306 50  0000 R CNN
+F 1 "74LS163" V 8005 4306 50  0000 R CNN
+F 2 "" H 8050 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS163" H 8050 5150 50  0001 C CNN
+	1    8050 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8850 5150 8850 6150
+Wire Wire Line
+	8850 6150 6350 6150
+Wire Wire Line
+	6350 5150 6350 6150
+Connection ~ 6350 6150
+Wire Wire Line
+	6350 6150 3850 6150
+Wire Wire Line
+	3850 5150 3850 6150
+Connection ~ 3850 6150
+Wire Wire Line
+	3850 6150 1800 6150
+Wire Wire Line
+	8350 6050 8350 6300
+Connection ~ 8350 6050
+$Comp
+L power:Earth #PWR?
+U 1 1 5E1A3868
+P 1800 6150
+F 0 "#PWR?" H 1800 5900 50  0001 C CNN
+F 1 "Earth" H 1800 6000 50  0001 C CNN
+F 2 "" H 1800 6150 50  0001 C CNN
+F 3 "~" H 1800 6150 50  0001 C CNN
+	1    1800 6150
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

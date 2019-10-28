@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -227,30 +227,8 @@ F 3 "" H 5700 4700 50  0001 C CNN
 	1    5700 4700
 	0    -1   -1   0   
 $EndComp
-$Comp
-L 74xx:74LS161 U?
-U 1 1 5DAF5520
-P 6500 4700
-F 0 "U?" V 6546 3856 50  0000 R CNN
-F 1 "74LS161" V 6455 3856 50  0000 R CNN
-F 2 "" H 6500 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 6500 4700 50  0001 C CNN
-	1    6500 4700
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6800 5200 6800 5600
-$Comp
-L 74xx:74LS161 U?
-U 1 1 5DB20441
-P 4200 4700
-F 0 "U?" V 4246 3856 50  0000 R CNN
-F 1 "74LS161" V 4155 3856 50  0000 R CNN
-F 2 "" H 4200 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 4200 4700 50  0001 C CNN
-	1    4200 4700
-	0    -1   -1   0   
-$EndComp
 Connection ~ 4000 4200
 Wire Wire Line
 	4500 5200 4500 5600
@@ -269,4 +247,30 @@ Wire Wire Line
 Connection ~ 7000 5400
 Wire Wire Line
 	7750 2200 7750 5400
+$Comp
+L 74xx:74LS163 U?
+U 1 1 5E14CC07
+P 4200 4700
+AR Path="/5DCCFA8E/5E14CC07" Ref="U?"  Part="1" 
+AR Path="/5D9B51E1/5E14CC07" Ref="U?"  Part="1" 
+F 0 "U?" V 4246 3856 50  0000 R CNN
+F 1 "74LS163" V 4155 3856 50  0000 R CNN
+F 2 "" H 4200 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS163" H 4200 4700 50  0001 C CNN
+	1    4200 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS163 U?
+U 1 1 5E14E3D1
+P 6500 4700
+AR Path="/5DCCFA8E/5E14E3D1" Ref="U?"  Part="1" 
+AR Path="/5D9B51E1/5E14E3D1" Ref="U?"  Part="1" 
+F 0 "U?" V 6546 3856 50  0000 R CNN
+F 1 "74LS163" V 6455 3856 50  0000 R CNN
+F 2 "" H 6500 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS163" H 6500 4700 50  0001 C CNN
+	1    6500 4700
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
