@@ -285,22 +285,6 @@ Wire Wire Line
 	5150 3850 5150 4700
 Wire Wire Line
 	6350 3600 6350 3850
-Wire Wire Line
-	4200 2000 4200 850 
-Wire Wire Line
-	4300 2000 4300 850 
-Wire Wire Line
-	4400 2000 4400 850 
-Wire Wire Line
-	4500 2000 4500 850 
-Wire Wire Line
-	4600 2000 4600 850 
-Wire Wire Line
-	4700 2000 4700 850 
-Wire Wire Line
-	4800 2000 4800 850 
-Wire Wire Line
-	4900 2000 4900 850 
 NoConn ~ 6250 2600
 NoConn ~ 6150 2600
 NoConn ~ 6150 3600
@@ -389,22 +373,6 @@ Wire Wire Line
 	5450 2600 5450 4300
 Wire Wire Line
 	5350 4300 6250 4300
-Wire Wire Line
-	7650 850  7650 3150
-Wire Wire Line
-	7750 850  7750 3150
-Wire Wire Line
-	7850 850  7850 3150
-Wire Wire Line
-	7950 850  7950 3150
-Wire Wire Line
-	8050 850  8050 3150
-Wire Wire Line
-	8150 850  8150 3150
-Wire Wire Line
-	8250 850  8250 3150
-Wire Wire Line
-	8350 850  8350 3150
 $Comp
 L power:Earth #PWR?
 U 1 1 5E75274D
@@ -430,8 +398,6 @@ $EndComp
 Wire Wire Line
 	3900 2000 3900 1800
 Wire Wire Line
-	3900 1800 3150 1800
-Wire Wire Line
 	5950 2600 5950 1800
 Wire Wire Line
 	5950 1800 3900 1800
@@ -447,13 +413,13 @@ Connection ~ 1200 3750
 $Comp
 L 74xx:74LS04 U38
 U 1 1 5E788D2E
-P 2850 1800
-F 0 "U38" H 2850 2117 50  0000 C CNN
-F 1 "74LS04" H 2850 2026 50  0000 C CNN
-F 2 "" H 2850 1800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2850 1800 50  0001 C CNN
-	1    2850 1800
-	1    0    0    -1  
+P 1200 2700
+F 0 "U38" H 1200 3017 50  0000 C CNN
+F 1 "74LS04" H 1200 2926 50  0000 C CNN
+F 2 "" H 1200 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 1200 2700 50  0001 C CNN
+	1    1200 2700
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	1200 850  1200 1800
@@ -571,27 +537,73 @@ Wire Wire Line
 Connection ~ 7350 3050
 Wire Wire Line
 	7350 3050 7350 1800
-Wire Wire Line
-	2550 1800 1200 1800
 Connection ~ 1200 1800
 Wire Wire Line
-	1200 1800 1200 3750
-Wire Wire Line
-	5000 850  5000 1600
-Wire Wire Line
-	5000 1600 6350 1600
-Wire Wire Line
-	6350 1600 6350 2600
-Wire Wire Line
-	6450 1500 5100 1500
-Wire Wire Line
-	5100 1500 5100 850 
-Wire Wire Line
-	6450 1500 6450 2600
+	1200 1800 1200 2400
 Text Notes 2000 1000 2    50   ~ 0
-Write (Active High)
-Text Notes 5700 1000 2    50   ~ 0
+Write (Active Low)
+Text Notes 10850 3900 2    50   ~ 0
 Address Input
-Text Notes 8850 1000 2    50   ~ 0
+Text Notes 10750 4050 2    50   ~ 0
 Data Input
+Wire Wire Line
+	7650 2500 7650 3150
+Wire Wire Line
+	7750 2500 7750 3150
+Wire Wire Line
+	7850 2500 7850 3150
+Wire Wire Line
+	7950 2500 7950 3150
+Wire Wire Line
+	8050 2500 8050 3150
+Wire Wire Line
+	8150 2500 8150 3150
+Wire Wire Line
+	8250 2500 8250 3150
+Wire Wire Line
+	8350 2500 8350 3150
+Wire Wire Line
+	4200 700  6850 700 
+Wire Wire Line
+	4300 800  6850 800 
+Wire Wire Line
+	4400 900  6850 900 
+Wire Wire Line
+	4200 700  4200 2000
+Wire Wire Line
+	4300 800  4300 2000
+Wire Wire Line
+	4400 900  4400 2000
+Wire Wire Line
+	4500 1000 6850 1000
+Wire Wire Line
+	4500 1000 4500 2000
+Wire Wire Line
+	4600 1100 6850 1100
+Wire Wire Line
+	4600 1100 4600 2000
+Wire Wire Line
+	4700 1200 6850 1200
+Wire Wire Line
+	4700 1200 4700 2000
+Wire Wire Line
+	4800 1300 6850 1300
+Wire Wire Line
+	4800 1300 4800 2000
+Wire Wire Line
+	4900 1400 6850 1400
+Wire Wire Line
+	4900 1400 4900 2000
+Wire Wire Line
+	6350 1500 6350 2600
+Wire Wire Line
+	6450 1600 6850 1600
+Wire Wire Line
+	6450 1600 6450 2600
+Wire Wire Line
+	6350 1500 6850 1500
+Wire Wire Line
+	1200 3000 1200 3750
+Wire Wire Line
+	1200 1800 3900 1800
 $EndSCHEMATC
