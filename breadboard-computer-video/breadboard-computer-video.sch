@@ -283,14 +283,6 @@ F 3 "" H 2450 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 5200 6900 5200
-Wire Wire Line
-	5000 5300 6800 5300
-Wire Wire Line
-	5000 5400 6700 5400
-Wire Wire Line
-	5000 5500 6600 5500
-Wire Wire Line
 	4200 5200 3400 5200
 $Comp
 L 74xx:74LS08 U4
@@ -304,44 +296,25 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3300 6900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2950 5500 3200 5500
-Wire Wire Line
-	3200 5500 3200 6600
-Wire Wire Line
 	8050 1600 10100 1600
 Wire Wire Line
 	10100 1600 10100 6350
 Wire Wire Line
-	10100 6350 5600 6350
+	5550 6350 5550 7400
 Wire Wire Line
-	5600 6350 5600 7400
-Wire Wire Line
-	5600 7400 1850 7400
+	5550 7400 1850 7400
 Wire Wire Line
 	1850 7400 1850 7050
 Wire Wire Line
 	3300 7250 2050 7250
 Wire Wire Line
 	1950 6200 1950 6450
-$Comp
-L 74xx:74LS32 U3
-U 1 1 5DC0297B
-P 1950 6750
-F 0 "U3" V 1996 6570 50  0000 R CNN
-F 1 "74LS32" V 1905 6570 50  0000 R CNN
-F 2 "" H 1950 6750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1950 6750 50  0001 C CNN
-	1    1950 6750
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2050 7050 2050 7250
 Wire Wire Line
 	3300 7200 3300 7250
 Wire Wire Line
 	4900 1600 4900 1000
-Wire Wire Line
-	4900 1000 1650 1000
 Wire Wire Line
 	700  1000 700  6000
 Wire Wire Line
@@ -352,13 +325,11 @@ Wire Wire Line
 Wire Wire Line
 	3400 6600 3400 5400
 Wire Wire Line
-	6000 5000 4900 5000
-Wire Wire Line
 	4900 5000 4900 1600
 Wire Wire Line
-	2950 5400 4200 5400
+	2950 5400 3100 5400
 Wire Wire Line
-	2950 5300 3400 5300
+	2950 5300 3300 5300
 Connection ~ 3400 5200
 Wire Wire Line
 	3400 5200 2950 5200
@@ -406,11 +377,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 4600 6100 50
 	1    4600 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 5600 6500 5600
-NoConn ~ 5000 5900
-NoConn ~ 5000 5800
-NoConn ~ 5000 5700
 Wire Wire Line
 	3550 3500 4150 3500
 Wire Wire Line
@@ -470,35 +436,6 @@ Wire Wire Line
 	2450 6500 2450 7550
 Connection ~ 2450 7550
 Wire Wire Line
-	2450 7550 1100 7550
-Wire Wire Line
-	6500 4900 6500 5600
-Wire Wire Line
-	6600 4900 6600 5500
-Wire Wire Line
-	6700 4900 6700 5400
-Wire Wire Line
-	6800 4900 6800 5300
-Wire Wire Line
-	6900 5200 6900 4900
-Wire Wire Line
-	6000 4900 6000 5000
-Wire Wire Line
-	4600 7550 5800 7550
-$Comp
-L 4xxx:4021 U9
-U 1 1 5D92BCAE
-P 6600 4500
-F 0 "U9" H 6600 5481 50  0000 C CNN
-F 1 "4021" H 6600 5390 50  0000 C CNN
-F 2 "" H 6600 4650 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4021B.pdf" H 6600 4650 50  0001 C CNN
-	1    6600 4500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5800 4500 5800 7550
-Wire Wire Line
 	4200 6900 4100 6900
 Wire Wire Line
 	4200 6800 4000 6800
@@ -513,18 +450,12 @@ Connection ~ 4200 7550
 Wire Wire Line
 	4000 7550 4200 7550
 Wire Wire Line
-	6850 7700 4100 7700
-Wire Wire Line
-	6850 7700 6850 6200
-Wire Wire Line
-	6850 6200 7400 6200
-Wire Wire Line
-	7400 6200 7400 4500
+	6850 7700 5350 7700
 Wire Wire Line
 	4100 6900 4100 7700
 Connection ~ 4100 7700
 Wire Wire Line
-	4100 7700 1100 7700
+	4100 7700 1600 7700
 $Comp
 L power:VCC #PWR?
 U 1 1 5E2D656A
@@ -546,105 +477,10 @@ Wire Wire Line
 	800  900  800  3450
 Wire Wire Line
 	800  3450 900  3450
-$Comp
-L 74xx:74LS163 U2
-U 1 1 5E36C15A
-P 1950 2200
-F 0 "U2" V 1904 3044 50  0000 L CNN
-F 1 "74LS163" V 1995 3044 50  0000 L CNN
-F 2 "" H 1950 2200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS163" H 1950 2200 50  0001 C CNN
-	1    1950 2200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1650 1700 1650 1000
-Connection ~ 1650 1000
-Wire Wire Line
-	1650 1000 700  1000
-$Comp
-L 74xx:74LS08 U4
-U 2 1 5E37DDE5
-P 2350 1400
-F 0 "U4" V 2396 1220 50  0000 R CNN
-F 1 "74LS08" V 2305 1220 50  0000 R CNN
-F 2 "" H 2350 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2350 1400 50  0001 C CNN
-	2    2350 1400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2350 1100 1450 1100
-Wire Wire Line
-	1450 1100 600  1100
 Wire Wire Line
 	600  3600 900  3600
-Connection ~ 1450 1100
-NoConn ~ 2450 2700
-NoConn ~ 2350 2700
-NoConn ~ 2250 2700
-NoConn ~ 2150 2700
-NoConn ~ 1950 2700
-$Comp
-L 74xx:74LS04 U1
-U 3 1 5E3AF993
-P 1450 1400
-F 0 "U1" V 1404 1580 50  0000 L CNN
-F 1 "74LS04" V 1495 1580 50  0000 L CNN
-F 2 "" H 1450 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 1450 1400 50  0001 C CNN
-	3    1450 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5E3BFB68
-P 1950 1550
-F 0 "#PWR?" H 1950 1400 50  0001 C CNN
-F 1 "VCC" H 1967 1723 50  0000 C CNN
-F 2 "" H 1950 1550 50  0001 C CNN
-F 3 "" H 1950 1550 50  0001 C CNN
-	1    1950 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1950 1550 1850 1550
-Wire Wire Line
-	1750 1550 1750 1700
-Wire Wire Line
-	1850 1700 1850 1550
-Connection ~ 1850 1550
-Wire Wire Line
-	1850 1550 1750 1550
-Wire Wire Line
-	1950 1550 1950 1700
-Connection ~ 1950 1550
-$Comp
-L power:Earth #PWR?
-U 1 1 5E3D9597
-P 7100 5050
-F 0 "#PWR?" H 7100 4800 50  0001 C CNN
-F 1 "Earth" H 7100 4900 50  0001 C CNN
-F 2 "" H 7100 5050 50  0001 C CNN
-F 3 "~" H 7100 5050 50  0001 C CNN
-	1    7100 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7100 5050 7100 4900
-Wire Wire Line
-	7000 4900 7000 5050
-Wire Wire Line
-	7000 5050 7100 5050
-Connection ~ 7100 5050
-Wire Wire Line
-	7100 5050 7200 5050
-Wire Wire Line
-	7200 5050 7200 4900
-Wire Wire Line
-	6200 4900 6200 5100
-Wire Wire Line
-	6200 5100 5150 5100
+	6650 5100 5150 5100
 Wire Wire Line
 	3550 4200 3800 4200
 Wire Wire Line
@@ -652,10 +488,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 3250 5150 5100
 Wire Wire Line
-	600  1100 600  3250
-Wire Wire Line
 	600  3250 600  3600
-Connection ~ 600  3250
 Wire Wire Line
 	1950 3500 2550 3500
 Wire Wire Line
@@ -703,13 +536,6 @@ $EndSheet
 Wire Wire Line
 	4100 3150 3300 3150
 Connection ~ 3300 3150
-Wire Wire Line
-	3300 3150 1150 3150
-Connection ~ 1150 3150
-Wire Wire Line
-	1150 3150 1000 3150
-Wire Wire Line
-	1150 2200 1150 3150
 $Comp
 L power:Earth #PWR?
 U 1 1 5E98DD67
@@ -719,17 +545,6 @@ F 1 "Earth" H 1000 3000 50  0001 C CNN
 F 2 "" H 1000 3150 50  0001 C CNN
 F 3 "~" H 1000 3150 50  0001 C CNN
 	1    1000 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5E98E66C
-P 2750 2200
-F 0 "#PWR?" H 2750 2050 50  0001 C CNN
-F 1 "VCC" V 2767 2328 50  0000 L CNN
-F 2 "" H 2750 2200 50  0001 C CNN
-F 3 "" H 2750 2200 50  0001 C CNN
-	1    2750 2200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -743,10 +558,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6700 3600 50  0001 C CNN
 	3    6700 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 3700 6200 3700
-Wire Wire Line
-	6200 3700 6200 4100
 Wire Wire Line
 	6200 3350 6200 3500
 Wire Wire Line
@@ -801,4 +612,148 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 4500 1600 50  0001 C CNN
 	2    4500 1600
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74LS02 U?
+U 3 1 5DC8E486
+P 1950 6750
+F 0 "U?" V 1996 6570 50  0000 R CNN
+F 1 "74LS02" V 1905 6570 50  0000 R CNN
+F 2 "" H 1950 6750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 1950 6750 50  0001 C CNN
+	3    1950 6750
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 1950 5500
+NoConn ~ 1950 5400
+NoConn ~ 1950 5300
+NoConn ~ 1950 5200
+Wire Wire Line
+	1950 5700 1600 5700
+Wire Wire Line
+	1600 5700 1600 5800
+Connection ~ 1600 7700
+Wire Wire Line
+	1600 7700 1100 7700
+NoConn ~ 2950 5700
+$Comp
+L 74xx:74LS08 U?
+U 4 1 5DCE6604
+P 3200 6300
+F 0 "U?" V 3154 6488 50  0000 L CNN
+F 1 "74LS08" V 3245 6488 50  0000 L CNN
+F 2 "" H 3200 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3200 6300 50  0001 C CNN
+	4    3200 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 6000 3100 5400
+Connection ~ 3100 5400
+Wire Wire Line
+	3100 5400 4200 5400
+Wire Wire Line
+	3300 6000 3300 5300
+Connection ~ 3300 5300
+Wire Wire Line
+	3300 5300 3400 5300
+Wire Wire Line
+	5000 5400 6250 5400
+Wire Wire Line
+	5000 5500 6150 5500
+Wire Wire Line
+	5000 5600 6050 5600
+Wire Wire Line
+	5000 5700 5950 5700
+Wire Wire Line
+	5000 5800 5850 5800
+Wire Wire Line
+	5000 5900 5750 5900
+$Comp
+L 74xx:74LS165 U?
+U 1 1 5DD7AB27
+P 6250 4400
+F 0 "U?" V 6296 3356 50  0000 R CNN
+F 1 "74LS165" V 6205 3356 50  0000 R CNN
+F 2 "" H 6250 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS165" H 6250 4400 50  0001 C CNN
+	1    6250 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 5200 6450 5200
+Wire Wire Line
+	5000 5300 6350 5300
+Wire Wire Line
+	6650 4900 6650 5100
+Wire Wire Line
+	5750 5900 5750 4900
+Wire Wire Line
+	5850 5800 5850 4900
+Wire Wire Line
+	5950 5700 5950 4900
+Wire Wire Line
+	6350 4900 6350 5300
+Wire Wire Line
+	6250 4900 6250 5400
+Wire Wire Line
+	6850 4900 6850 5000
+Wire Wire Line
+	6450 5200 6450 4900
+Wire Wire Line
+	6050 4900 6050 5600
+Wire Wire Line
+	6150 4900 6150 5500
+Wire Wire Line
+	6850 5000 4900 5000
+Wire Wire Line
+	5650 3700 5650 3900
+Wire Wire Line
+	5650 3700 6400 3700
+Wire Wire Line
+	6850 7550 6850 6400
+Wire Wire Line
+	4600 7550 5650 7550
+Wire Wire Line
+	5350 7700 5350 4400
+Connection ~ 5350 7700
+Wire Wire Line
+	5350 7700 4100 7700
+Wire Wire Line
+	7250 4400 7250 6400
+Wire Wire Line
+	6850 6400 6950 6400
+Wire Wire Line
+	5650 4900 5650 7550
+Connection ~ 5650 7550
+Wire Wire Line
+	5650 7550 6850 7550
+Wire Wire Line
+	6950 4900 6950 6400
+Connection ~ 6950 6400
+Wire Wire Line
+	6950 6400 7250 6400
+NoConn ~ 5750 3900
+Wire Wire Line
+	1100 7550 2450 7550
+Wire Wire Line
+	1600 5800 1950 5800
+Connection ~ 1600 5800
+Wire Wire Line
+	1600 5800 1600 5900
+Wire Wire Line
+	1600 5900 1950 5900
+Connection ~ 1600 5900
+Wire Wire Line
+	1600 5900 1600 7700
+Wire Wire Line
+	700  1000 4900 1000
+Wire Wire Line
+	1000 3150 3300 3150
+Wire Wire Line
+	600  3600 600  6200
+Wire Wire Line
+	600  6200 1950 6200
+Connection ~ 600  3600
+Connection ~ 1950 6200
+NoConn ~ 2950 5500
 $EndSCHEMATC

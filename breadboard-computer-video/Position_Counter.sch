@@ -14,7 +14,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1100 2950 3    50   Input ~ 0
+Text HLabel 1100 3550 3    50   Input ~ 0
 CLK
 $Comp
 L 74xx:74LS83 U28
@@ -614,7 +614,7 @@ Wire Wire Line
 	550  5100 550  7600
 Connection ~ 550  5100
 Wire Wire Line
-	650  2950 2850 2950
+	650  2950 1100 2950
 Wire Wire Line
 	650  2950 650  7300
 Wire Wire Line
@@ -763,4 +763,18 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS163" H 5750 6600 50  0001 C CNN
 	1    5750 6600
 	0    -1   -1   0   
 $EndComp
+$Comp
+L 74xx:74LS04 U?
+U 3 1 5E00B3C7
+P 1100 3250
+F 0 "U?" V 1146 3070 50  0000 R CNN
+F 1 "74LS04" V 1055 3070 50  0000 R CNN
+F 2 "" H 1100 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 1100 3250 50  0001 C CNN
+	3    1100 3250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1100 2950
+Wire Wire Line
+	1100 2950 2850 2950
 $EndSCHEMATC
