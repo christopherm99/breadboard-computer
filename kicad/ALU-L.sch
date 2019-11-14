@@ -5,9 +5,9 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 8 26
-Title ""
-Date "2019-10-03"
-Rev "v0.1"
+Title "ALU Logic"
+Date "2019-11-13"
+Rev "v1.0"
 Comp "Christopher Milan"
 Comment1 "Computer Science 4"
 Comment2 "Breadboard Computer Schematic"
@@ -737,10 +737,6 @@ Text HLabel 8600 2500 2    50   Input ~ 0
 ~CMP~
 Text HLabel 8600 5500 2    50   Input ~ 0
 ~CMPL~
-Text HLabel 7150 800  2    50   Input ~ 0
-A_0
-Wire Wire Line
-	7150 800  7100 800 
 Wire Wire Line
 	8550 2500 8600 2500
 Wire Wire Line
@@ -762,48 +758,6 @@ F 3 "" H 8300 2450 50  0001 C CNN
 	1    8300 2450
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	7550 2350 6300 2350
-Wire Wire Line
-	7550 2550 7550 2350
-Wire Wire Line
-	7650 2300 7650 2550
-Wire Wire Line
-	6500 2300 7650 2300
-Wire Wire Line
-	6500 2150 6500 2300
-Wire Wire Line
-	7050 2250 7050 2150
-Wire Wire Line
-	7750 2250 7050 2250
-Wire Wire Line
-	7750 2550 7750 2250
-Wire Wire Line
-	8250 2350 8250 2550
-Wire Wire Line
-	9300 2300 9300 2150
-Wire Wire Line
-	8150 2300 9300 2300
-Wire Wire Line
-	8150 2550 8150 2300
-Wire Wire Line
-	8750 2250 8750 2150
-Wire Wire Line
-	8050 2250 8750 2250
-Wire Wire Line
-	8050 2550 8050 2250
-Wire Wire Line
-	7850 2200 7850 2550
-Wire Wire Line
-	7600 2200 7850 2200
-Wire Wire Line
-	7600 2150 7600 2200
-Wire Wire Line
-	7950 2200 7950 2550
-Wire Wire Line
-	8200 2200 7950 2200
-Wire Wire Line
-	8200 2150 8200 2200
 $Comp
 L 74xx:74LS245 U33
 U 1 1 5EC634A5
@@ -815,58 +769,18 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 8050 3050 50  0001 C CNN
 	1    8050 3050
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	7150 1000 7100 1000
-Wire Wire Line
-	6400 1500 6400 1550
-Wire Wire Line
-	6600 1500 6600 1550
-Wire Wire Line
-	6950 1500 6950 1550
-Wire Wire Line
-	7150 1500 7150 1550
-Wire Wire Line
-	7500 1500 7500 1550
-Wire Wire Line
-	7700 1500 7700 1550
-Wire Wire Line
-	8100 1500 8100 1550
-Wire Wire Line
-	8300 1500 8300 1550
-Wire Wire Line
-	8650 1500 8650 1550
-Wire Wire Line
-	8850 1500 8850 1550
-Wire Wire Line
-	9200 1500 9200 1550
-Wire Wire Line
-	9400 1500 9400 1550
-Text HLabel 6400 1500 1    50   Input ~ 0
+Text HLabel 7650 1350 1    50   Input ~ 0
 A_1
-Text HLabel 6950 1500 1    50   Input ~ 0
+Text HLabel 7750 1350 1    50   Input ~ 0
 A_2
-Text HLabel 7500 1500 1    50   Input ~ 0
+Text HLabel 7850 1350 1    50   Input ~ 0
 A_3
-Text HLabel 8100 1500 1    50   Input ~ 0
+Text HLabel 7950 1350 1    50   Input ~ 0
 A_4
-Text HLabel 8650 1500 1    50   Input ~ 0
+Text HLabel 8050 1350 1    50   Input ~ 0
 A_5
-Text HLabel 9200 1500 1    50   Input ~ 0
+Text HLabel 8150 1350 1    50   Input ~ 0
 A_6
-Text HLabel 9400 1500 1    50   Input ~ 0
-TMP_6
-Text HLabel 8850 1500 1    50   Input ~ 0
-TMP_5
-Text HLabel 8300 1500 1    50   Input ~ 0
-TMP_4
-Text HLabel 7700 1500 1    50   Input ~ 0
-TMP_3
-Text HLabel 7150 1500 1    50   Input ~ 0
-TMP_2
-Text HLabel 6600 1500 1    50   Input ~ 0
-TMP_1
-Text HLabel 7150 1000 2    50   Input ~ 0
-TMP_0
 Wire Wire Line
 	3400 2350 1800 2350
 $Comp
@@ -911,110 +825,8 @@ Wire Wire Line
 	1700 1500 1700 1550
 Text HLabel 1700 1500 1    50   Input ~ 0
 A_0
-Wire Wire Line
-	9850 2350 8250 2350
-Text HLabel 9950 1500 1    50   Input ~ 0
-TMP_7
-Text HLabel 9750 1500 1    50   Input ~ 0
+Text HLabel 8250 1350 1    50   Input ~ 0
 A_7
-Wire Wire Line
-	9950 1500 9950 1550
-Wire Wire Line
-	9750 1500 9750 1550
-Wire Wire Line
-	9850 2150 9850 2350
-Wire Wire Line
-	6500 900  6300 900 
-Wire Wire Line
-	6300 900  6300 2350
-$Comp
-L 4xxx:4077 U31
-U 1 1 5F1140E9
-P 6800 900
-F 0 "U31" H 6800 583 50  0000 C CNN
-F 1 "4077" H 6800 674 50  0000 C CNN
-F 2 "" H 6800 900 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4076bms.pdf" H 6800 900 50  0001 C CNN
-	1    6800 900 
-	-1   0    0    1   
-$EndComp
-$Comp
-L 4xxx:4077 U35
-U 3 1 5F12018D
-P 9300 1850
-F 0 "U35" H 9300 1533 50  0000 C CNN
-F 1 "4077" H 9300 1624 50  0000 C CNN
-F 2 "" H 9300 1850 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4076bms.pdf" H 9300 1850 50  0001 C CNN
-	3    9300 1850
-	0    -1   1    0   
-$EndComp
-$Comp
-L 4xxx:4077 U35
-U 2 1 5F12D254
-P 8750 1850
-F 0 "U35" H 8750 1533 50  0000 C CNN
-F 1 "4077" H 8750 1624 50  0000 C CNN
-F 2 "" H 8750 1850 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4076bms.pdf" H 8750 1850 50  0001 C CNN
-	2    8750 1850
-	0    -1   1    0   
-$EndComp
-$Comp
-L 4xxx:4077 U35
-U 1 1 5F141E58
-P 8200 1850
-F 0 "U35" H 8200 1533 50  0000 C CNN
-F 1 "4077" H 8200 1624 50  0000 C CNN
-F 2 "" H 8200 1850 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4076bms.pdf" H 8200 1850 50  0001 C CNN
-	1    8200 1850
-	0    -1   1    0   
-$EndComp
-$Comp
-L 4xxx:4077 U31
-U 4 1 5F141E5E
-P 7600 1850
-F 0 "U31" H 7600 1533 50  0000 C CNN
-F 1 "4077" H 7600 1624 50  0000 C CNN
-F 2 "" H 7600 1850 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4076bms.pdf" H 7600 1850 50  0001 C CNN
-	4    7600 1850
-	0    -1   1    0   
-$EndComp
-$Comp
-L 4xxx:4077 U31
-U 3 1 5F1544EA
-P 7050 1850
-F 0 "U31" H 7050 1533 50  0000 C CNN
-F 1 "4077" H 7050 1624 50  0000 C CNN
-F 2 "" H 7050 1850 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4076bms.pdf" H 7050 1850 50  0001 C CNN
-	3    7050 1850
-	0    -1   1    0   
-$EndComp
-$Comp
-L 4xxx:4077 U31
-U 2 1 5F1544F0
-P 6500 1850
-F 0 "U31" H 6500 1533 50  0000 C CNN
-F 1 "4077" H 6500 1624 50  0000 C CNN
-F 2 "" H 6500 1850 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4076bms.pdf" H 6500 1850 50  0001 C CNN
-	2    6500 1850
-	0    -1   1    0   
-$EndComp
-$Comp
-L 4xxx:4077 U35
-U 4 1 5F188260
-P 9850 1850
-F 0 "U35" H 9850 1533 50  0000 C CNN
-F 1 "4077" H 9850 1624 50  0000 C CNN
-F 2 "" H 9850 1850 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4076bms.pdf" H 9850 1850 50  0001 C CNN
-	4    9850 1850
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	7550 3550 7550 3700
 Wire Wire Line
@@ -1288,4 +1100,117 @@ F 3 "74xx/74ls86.pdf" H 4600 1850 50  0001 C CNN
 	2    4600 1850
 	0    1    1    0   
 $EndComp
+$Comp
+L 74xx:74LS688 U?
+U 1 1 5DAF0CC2
+P 8450 1950
+F 0 "U?" V 8404 706 50  0000 R CNN
+F 1 "74LS688" V 8495 706 50  0000 R CNN
+F 2 "" H 8450 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS688" H 8450 1950 50  0001 C CNN
+	1    8450 1950
+	0    -1   1    0   
+$EndComp
+Text HLabel 7550 1350 1    50   Input ~ 0
+A_0
+Text HLabel 8450 1350 1    50   Input ~ 0
+TMP_0
+Text HLabel 9150 1350 1    50   Input ~ 0
+TMP_7
+Text HLabel 8550 1350 1    50   Input ~ 0
+TMP_1
+Text HLabel 8650 1350 1    50   Input ~ 0
+TMP_2
+Text HLabel 8750 1350 1    50   Input ~ 0
+TMP_3
+Text HLabel 8850 1350 1    50   Input ~ 0
+TMP_4
+Text HLabel 8950 1350 1    50   Input ~ 0
+TMP_5
+Text HLabel 9050 1350 1    50   Input ~ 0
+TMP_6
+Wire Wire Line
+	7650 2500 7650 2550
+Wire Wire Line
+	7550 2450 7550 2500
+Wire Wire Line
+	7650 2500 7550 2500
+Connection ~ 7550 2500
+Wire Wire Line
+	7550 2500 7550 2550
+Wire Wire Line
+	7650 2500 7750 2500
+Wire Wire Line
+	7750 2500 7750 2550
+Connection ~ 7650 2500
+Wire Wire Line
+	7750 2500 7850 2500
+Wire Wire Line
+	7850 2500 7850 2550
+Connection ~ 7750 2500
+Wire Wire Line
+	7850 2500 7950 2500
+Wire Wire Line
+	7950 2500 7950 2550
+Connection ~ 7850 2500
+Wire Wire Line
+	7950 2500 8050 2500
+Wire Wire Line
+	8050 2500 8050 2550
+Connection ~ 7950 2500
+Wire Wire Line
+	8050 2500 8150 2500
+Wire Wire Line
+	8150 2500 8150 2550
+Connection ~ 8050 2500
+Wire Wire Line
+	8150 2500 8250 2500
+Wire Wire Line
+	8250 2500 8250 2550
+Connection ~ 8150 2500
+Wire Wire Line
+	7550 1350 7550 1450
+Wire Wire Line
+	7650 1350 7650 1450
+Wire Wire Line
+	7750 1350 7750 1450
+Wire Wire Line
+	7850 1350 7850 1450
+Wire Wire Line
+	7950 1350 7950 1450
+Wire Wire Line
+	8050 1350 8050 1450
+Wire Wire Line
+	8150 1350 8150 1450
+Wire Wire Line
+	8250 1350 8250 1450
+Wire Wire Line
+	8450 1350 8450 1450
+Wire Wire Line
+	8550 1350 8550 1450
+Wire Wire Line
+	8650 1350 8650 1450
+Wire Wire Line
+	8750 1350 8750 1450
+Wire Wire Line
+	8850 1350 8850 1450
+Wire Wire Line
+	8950 1350 8950 1450
+Wire Wire Line
+	9050 1350 9050 1450
+Wire Wire Line
+	9150 1350 9150 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5DFDB9D4
+P 9350 1350
+F 0 "#PWR?" H 9350 1100 50  0001 C CNN
+F 1 "GND" H 9355 1177 50  0000 C CNN
+F 2 "" H 9350 1350 50  0001 C CNN
+F 3 "" H 9350 1350 50  0001 C CNN
+	1    9350 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9350 1350 9350 1450
 $EndSCHEMATC

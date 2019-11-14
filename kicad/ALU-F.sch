@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 26
-Title ""
-Date "2019-10-03"
-Rev "v0.1"
+Title "ALU Flags Calculator"
+Date "2019-11-13"
+Rev "v1.0"
 Comp "Christopher Milan"
 Comment1 "Computer Science 4"
 Comment2 "Breadboard Computer Schematic"

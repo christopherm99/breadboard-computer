@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 23 26
+Sheet 19 26
 Title "B Register"
-Date "2019-10-03"
-Rev "v0.1"
+Date "2019-11-13"
+Rev "v1.0"
 Comp "Christopher Milan"
 Comment1 "Computer Science 4"
 Comment2 "Breadboard Computer Schematic"

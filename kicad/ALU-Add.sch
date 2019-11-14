@@ -2,12 +2,12 @@ EESchema Schematic File Version 4
 LIBS:breadboard-computer-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 10 26
-Title ""
-Date "2019-10-03"
-Rev "v0.1"
+Title "ALU Adder/Subtractor"
+Date "2019-11-13"
+Rev "v1.0"
 Comp "Christopher Milan"
 Comment1 "Computer Science 4"
 Comment2 "Breadboard Computer Schematic"
