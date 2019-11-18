@@ -6,7 +6,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 4 26
 Title "Clock"
-Date "2019-11-13"
+Date "2019-11-17"
 Rev "v1.0"
 Comp "Christopher Milan"
 Comment1 "Computer Science 4"

@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 26
 Title "ALU Flags Calculator"
-Date "2019-11-13"
+Date "2019-11-17"
 Rev "v1.0"
 Comp "Christopher Milan"
 Comment1 "Computer Science 4"

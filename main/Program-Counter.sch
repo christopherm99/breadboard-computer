@@ -6,7 +6,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 21 26
 Title "Program Counter"
-Date "2019-11-13"
+Date "2019-11-17"
 Rev "v1.0"
 Comp "Christopher Milan"
 Comment1 "Computer Science 4"
@@ -87,10 +87,10 @@ Text HLabel 3200 4300 1    50   Input ~ 0
 Text HLabel 2550 2450 1    50   Input ~ 0
 ~PCI~
 $Comp
-L 74xx:74LS161 U89
+L 74xx:74LS161 U74
 U 1 1 605241F8
 P 2550 3000
-F 0 "U89" V 2504 3844 50  0000 L CNN
+F 0 "U74" V 2504 3844 50  0000 L CNN
 F 1 "74LS161" V 2595 3844 50  0000 L CNN
 F 2 "" H 2550 3000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 2550 3000 50  0001 C CNN
@@ -98,10 +98,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 2550 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 74xx:74LS161 U91
+L 74xx:74LS161 U76
 U 1 1 60528F0E
 P 4600 3000
-F 0 "U91" V 4554 3844 50  0000 L CNN
+F 0 "U76" V 4554 3844 50  0000 L CNN
 F 1 "74LS161" V 4645 3844 50  0000 L CNN
 F 2 "" H 4600 3000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 4600 3000 50  0001 C CNN
@@ -109,10 +109,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 4600 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 74xx:74LS161 U93
+L 74xx:74LS161 U78
 U 1 1 6052CF75
 P 6650 3000
-F 0 "U93" V 6604 3844 50  0000 L CNN
+F 0 "U78" V 6604 3844 50  0000 L CNN
 F 1 "74LS161" V 6695 3844 50  0000 L CNN
 F 2 "" H 6650 3000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 6650 3000 50  0001 C CNN
@@ -120,10 +120,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 6650 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 74xx:74LS161 U94
+L 74xx:74LS161 U79
 U 1 1 6052CF7B
 P 8700 3000
-F 0 "U94" V 8654 3844 50  0000 L CNN
+F 0 "U79" V 8654 3844 50  0000 L CNN
 F 1 "74LS161" V 8745 3844 50  0000 L CNN
 F 2 "" H 8700 3000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 8700 3000 50  0001 C CNN
@@ -187,10 +187,10 @@ Wire Wire Line
 Wire Wire Line
 	2350 2050 2350 2500
 $Comp
-L 74xx:74LS245 U90
+L 74xx:74LS245 U75
 U 1 1 60546328
 P 3700 4900
-F 0 "U90" V 3654 5744 50  0000 L CNN
+F 0 "U75" V 3654 5744 50  0000 L CNN
 F 1 "74LS245" V 3745 5744 50  0000 L CNN
 F 2 "" H 3700 4900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 3700 4900 50  0001 C CNN
@@ -198,10 +198,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 3700 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 74xx:74LS245 U92
+L 74xx:74LS245 U77
 U 1 1 6054B8F9
 P 5800 4900
-F 0 "U92" V 5754 5744 50  0000 L CNN
+F 0 "U77" V 5754 5744 50  0000 L CNN
 F 1 "74LS245" V 5845 5744 50  0000 L CNN
 F 2 "" H 5800 4900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 5800 4900 50  0001 C CNN
