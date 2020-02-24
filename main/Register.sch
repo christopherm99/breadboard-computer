@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:breadboard-computer-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 8500 11000 portrait
 encoding utf-8
 Sheet 14 26
 Title "Register Block"
-Date "2019-11-17"
-Rev "v1.0"
+Date "2020-02-23"
+Rev "v1.1"
 Comp "Christopher Milan"
 Comment1 "Computer Science 4"
 Comment2 "Breadboard Computer Schematic"

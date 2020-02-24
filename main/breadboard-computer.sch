@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:breadboard-computer-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 8500 11000 portrait
 encoding utf-8
 Sheet 1 26
 Title "High Level Overview"
-Date "2019-11-17"
-Rev "v1.0"
+Date "2020-02-23"
+Rev "v1.1"
 Comp "Christopher Milan"
 Comment1 "Computer Science 4"
 Comment2 "Breadboard Computer Schematic"
@@ -132,7 +131,7 @@ Text Label 1400 10400 1    50   Italic 0
 BUS_4
 Text Label 1500 10400 1    50   Italic 0
 BUS_5
-Text Label 1600 10550 1    50   Italic 0
+Text Label 1600 10400 1    50   Italic 0
 BUS_6
 Text Label 1700 10400 1    50   Italic 0
 BUS_7
@@ -175,7 +174,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 10400 1500 7900
 Wire Wire Line
-	1600 8000 1600 10550
+	1600 8000 1600 10400
 Wire Wire Line
 	1700 10400 1700 8100
 Wire Wire Line
